@@ -47,7 +47,7 @@ const Maps = ({ navigation, route }) => {
       minZoomLevel={14}>
       {selectedLocation ? (
         <Marker
-          title="Ubicacion Seleccionada"
+          title="Ubicación Seleccionada"
           coordinate={{
             latitude: selectedLocation?.lat,
             longitude: selectedLocation?.lng,

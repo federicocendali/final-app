@@ -7,7 +7,7 @@ import { MapPreview } from "../../components";
 const PlaceDetail = ({ navigation, route }) => {
   const { placeId } = route.params;
   const place = useSelector((state) => state.place.places.find((place) => place.id === placeId));
-  const parseCoords = place.coords;
+  const parseCoords = JSON.parse(place.coords);
 
   return (
     <ScrollView style={styles.container}>
@@ -17,7 +17,7 @@ const PlaceDetail = ({ navigation, route }) => {
           <Text style={styles.address}>{place.address}</Text>
         </View>
         <MapPreview style={styles.map} location={{ lat: parseCoords.lat, lng: parseCoords.lng }}>
-          <Text>Ubicacion no disponible</Text>
+          <Text>Ubicación no disponible</Text>
         </MapPreview>
       </View>
     </ScrollView>

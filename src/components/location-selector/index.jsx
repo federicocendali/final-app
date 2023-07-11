@@ -15,7 +15,7 @@ const LocationSelector = ({ onLocation }) => {
   const verifyPermissions = async () => {
     const { status } = await requestForegroundPermissionsAsync();
     if (status !== "granted") {
-      Alert.alert("Permisos insuficientes", "Necesitamos permisos para obtener la ubicacion", [
+      Alert.alert("Permisos insuficientes", "Necesitamos permisos para obtener la ubicación", [
         { text: "Ok" },
       ]);
       return false;
@@ -46,18 +46,18 @@ const LocationSelector = ({ onLocation }) => {
   return (
     <View style={styles.container}>
       <MapPreview location={pickedLocation} style={styles.preview}>
-        <Text>No hay ubicacion seleccionada</Text>
+        <Text>No hay ubicación seleccionada</Text>
       </MapPreview>
       <View style={styles.actions}>
         <Button
-          title="Obtener ubicacion"
+          title="Obtener ubicación"
           onPress={() => onHandlerGetLocation()}
           color={colors.primary}
         />
       </View>
       <View style={styles.actions}>
         <Button
-          title="Seleccionar ubicacion"
+          title="Seleccionar ubicación"
           onPress={() => onHandlerGetLocation(true)}
           color={colors.primary}
         />

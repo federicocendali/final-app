@@ -30,10 +30,10 @@ const NewPlace = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>Nombre nueva ubicacion</Text>
+        <Text style={styles.title}>Nombre nueva ubicación</Text>
         <TextInput
           style={styles.input}
-          placeholder="Nuevo Mexico, CDMX 12345"
+          placeholder="Nuevo México, CDMX 12345"
           onChangeText={onHandlerChangeText}
           value={text}
         />
@@ -41,7 +41,7 @@ const NewPlace = ({ navigation }) => {
         <LocationSelector onLocation={onLocation} />
         <Button
           disabled={!enableButton}
-          title="Grabar direccion"
+          title="Grabar dirección"
           color={colors.primary}
           onPress={onHandlerSubmit}
         />

@@ -109,7 +109,7 @@ const Auth = () => {
           <View style={styles.modalContainer}>
             <Text style={styles.modalTitle}>{error ? error : "Loading"}</Text>
             {error ? (
-              <Button title="OK" color={colors.text} onPress={onHandleButtonModal} />
+              <Button title="Ok" color={colors.text} onPress={onHandleButtonModal} />
             ) : (
               <ActivityIndicator size="small" color={colors.text} />
             )}

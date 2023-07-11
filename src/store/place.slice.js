@@ -24,7 +24,13 @@ export const savePlace = createAsyncThunk("place/savePlace", async (place, thunk
 
     const address = data.results[0].formatted_address;
     const result = await insertPlace(place.title, place.image, address, place.coords);
-    const newPlace = new Place(result.insertId, place.title, place.image, address, place.coords);
+    const newPlace = new Place(
+      result.insertId,
+      place.title,
+      place.image,
+      address,
+      JSON.stringify(place.coords)
+    );
 
     return newPlace;
   } catch (error) {

@@ -3,15 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { authTypes } from "./auth.types";
 import { FIREBASE_AUTH_SIGN_IN_URL, FIREBASE_AUTH_SIGN_UP_URL } from "../utils/firebase";
 
-const {
-  SIGN_IN_REQUEST,
-  SIGN_IN_SUCCESS,
-  SIGN_IN_FAILURE,
-  SIGN_UP_REQUEST,
-  SIGN_UP_SUCCESS,
-  SIGN_UP_FAILURE,
-  CLEAR_ERROR,
-} = authTypes;
+const { CLEAR_ERROR } = authTypes;
 
 export const signUp = createAsyncThunk("auth/signUp", async ({ email, password }) => {
   const response = await fetch(FIREBASE_AUTH_SIGN_UP_URL, {
@@ -50,7 +42,6 @@ export const signIn = createAsyncThunk("auth/signIn", async ({ email, password }
       returnSecureToken: true,
     }),
   });
-
   const data = await response.json();
 
   if (data.error) {

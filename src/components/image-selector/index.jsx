@@ -10,7 +10,7 @@ export const ImageSelector = ({ onImage }) => {
   const verifyPermissions = async () => {
     const { status } = await requestCameraPermissionsAsync();
     if (status !== "granted") {
-      Alert.alert("Permiso denegado", "Necesitamos permisos para usar la camara", [{ text: "Ok" }]);
+      Alert.alert("Permiso denegado", "Necesitamos permisos para usar la cámara", [{ text: "Ok" }]);
       return false;
     }
     return true;
@@ -31,7 +31,7 @@ export const ImageSelector = ({ onImage }) => {
     <View style={styles.container}>
       <View style={styles.preview}>
         {!pickedUrl ? (
-          <Text>No hay imagen seleccionada</Text>
+          <Text>No hay imágen seleccionada</Text>
         ) : (
           <Image style={styles.image} source={{ uri: pickedUrl }} />
         )}
