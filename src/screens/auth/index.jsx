@@ -44,12 +44,15 @@ const Auth = () => {
   const onHandleChangeAuth = () => {
     setIsLogin(!isLogin);
   };
-  const onHandleAuth = () => {
-    dispatch(
+  const onHandleAuth = async () => {
+    const result = await dispatch(
       isLogin
         ? signIn({ email: formState.email.value, password: formState.password.value })
         : signUp({ email: formState.email.value, password: formState.password.value })
     );
+    if (result.payload) {
+      dispatch({ type: isLogin ? "SIGN_IN_SUCCESS" : "SIGN_UP_SUCCESS", payload: result.payload });
+    }
   };
   const onHandleButtonModal = () => {
     dispatch(clearError());
