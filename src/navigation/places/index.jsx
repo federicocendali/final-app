@@ -3,8 +3,13 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { Platform, TouchableOpacity } from "react-native";
 
-import { MapsScreen, NewPlaceScreen, PlaceDetailScreen, PlaceListScreen } from "../screens/index";
-import colors from "../utils/colors";
+import {
+  MapsScreen,
+  NewPlaceScreen,
+  PlaceDetailScreen,
+  PlaceListScreen,
+} from "../../screens/index";
+import colors from "../../utils/colors";
 
 const Stack = createNativeStackNavigator();
 

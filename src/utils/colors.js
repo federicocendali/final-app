@@ -7,4 +7,5 @@ export default {
   white: "#FFFFFF",
   black: "#000000",
   gray: "#808080",
+  brightRed: "#E23428",
 };
