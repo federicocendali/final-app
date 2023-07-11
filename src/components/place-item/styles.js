@@ -25,10 +25,11 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 14,
     color: colors.text,
+    fontFamily: "RobotoCondensed-Regular",
   },
   address: {
     fontSize: 14,
     color: colors.text,
-    fontWeight: "bold",
+    fontFamily: "RobotoCondensed-Regular",
   },
 });

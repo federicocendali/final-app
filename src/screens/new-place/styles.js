@@ -13,11 +13,13 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     paddingBottom: 15,
+    fontFamily: "RobotoCondensed-Regular",
   },
   input: {
     borderBottomColor: colors.primary,
     borderBottomWidth: 1,
     marginBottom: 15,
     padding: 5,
+    fontFamily: "RobotoCondensed-Regular",
   },
 });

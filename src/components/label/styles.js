@@ -11,10 +11,12 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     paddingVertical: 5,
     color: colors.text,
+    fontFamily: "RobotoCondensed-Regular",
   },
   subLabel: {
     fontSize: 12,
     paddingVertical: 5,
     color: colors.text,
+    fontFamily: "RobotoCondensed-Regular",
   },
 });

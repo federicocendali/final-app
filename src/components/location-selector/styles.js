@@ -15,6 +15,9 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 20,
   },
+  text: {
+    fontFamily: "RobotoCondensed-Light",
+  },
   actions: {
     paddingVertical: 5,
   },

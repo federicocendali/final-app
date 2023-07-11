@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
     width: "90%",
     color: colors.text,
     paddingVertical: 5,
+    fontFamily: "RobotoCondensed-Light",
   },
   errorContainer: {
     flex: 1,
@@ -22,5 +23,6 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     paddingVertical: 5,
     color: colors.brightRed,
+    fontFamily: "RobotoCondensed-Regular",
   },
 });

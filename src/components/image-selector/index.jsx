@@ -31,7 +31,7 @@ export const ImageSelector = ({ onImage }) => {
     <View style={styles.container}>
       <View style={styles.preview}>
         {!pickedUrl ? (
-          <Text>No hay imágen seleccionada</Text>
+          <Text style={styles.text}>No hay imágen seleccionada</Text>
         ) : (
           <Image style={styles.image} source={{ uri: pickedUrl }} />
         )}

@@ -15,6 +15,9 @@ export const styles = StyleSheet.create({
     borderColor: colors.primary,
     borderWidth: 1,
   },
+  text: {
+    fontFamily: "RobotoCondensed-Light",
+  },
   image: {
     width: "100%",
     height: "100%",

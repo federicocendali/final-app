@@ -29,8 +29,12 @@ export const styles = StyleSheet.create({
   address: {
     color: colors.primary,
     textAlign: "center",
+    fontFamily: "RobotoCondensed-Regular",
   },
   map: {
     height: 220,
+  },
+  text: {
+    fontFamily: "RobotoCondensed-Regular",
   },
 });

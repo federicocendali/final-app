@@ -31,6 +31,7 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     textAlign: "center",
+    fontFamily: "RobotoCondensed-Regular",
   },
   linkContainer: {
     justifyContent: "center",
@@ -48,6 +49,7 @@ export const styles = StyleSheet.create({
     borderBottomWidth: 1,
     color: colors.tertiary,
     textAlign: "center",
+    fontFamily: "RobotoCondensed-Regular",
   },
   submitContainer: {
     paddingVertical: 5,
@@ -63,7 +65,7 @@ export const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     padding: 20,
-    borderRadius: 10,
+    borderRadius: 15,
     borderWidth: 1,
     borderColor: colors.secondary,
     backgroundColor: colors.primary,
@@ -71,5 +73,6 @@ export const styles = StyleSheet.create({
   modalTitle: {
     fontSize: 14,
     textAlign: "center",
+    fontFamily: "RobotoCondensed-Regular",
   },
 });

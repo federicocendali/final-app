@@ -46,7 +46,7 @@ const LocationSelector = ({ onLocation }) => {
   return (
     <View style={styles.container}>
       <MapPreview location={pickedLocation} style={styles.preview}>
-        <Text>No hay ubicación seleccionada</Text>
+        <Text style={styles.text}>No hay ubicación seleccionada</Text>
       </MapPreview>
       <View style={styles.actions}>
         <Button

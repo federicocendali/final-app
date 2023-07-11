@@ -17,7 +17,7 @@ const PlaceDetail = ({ navigation, route }) => {
           <Text style={styles.address}>{place.address}</Text>
         </View>
         <MapPreview style={styles.map} location={{ lat: parseCoords.lat, lng: parseCoords.lng }}>
-          <Text>Ubicación no disponible</Text>
+          <Text style={styles.text}>Ubicación no disponible</Text>
         </MapPreview>
       </View>
     </ScrollView>
